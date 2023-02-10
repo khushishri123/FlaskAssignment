@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Update Student Module</title>
+    </head>
+    <body>
+        <h1> Update Student Module </h1>
+        {{row}}
+        <form action="/updateRecord" method="post">
+            Roll Number: {{row[0]}}<br>
+            <input type="hidden" value="{{row[0]}}" name="roll_no">
+            Name: <input type="text" value="{{row[1]}}" name="name"><br>
+            Percentage: <input type="number" value="{{row[2]}}" name="percentage"><br>
+            <button type="submit">Update</button>
+        </form>
+
+    </body>
+</html>
